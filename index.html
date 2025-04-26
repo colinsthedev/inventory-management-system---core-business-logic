@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Core Logic Inventory Management System</h1>
+
+    <div class="form-group">
+      <input type="text" id="productName" placeholder="Product Name" />
+      <input type="number" id="productQty" placeholder="Quantity" />
+      <input type="number" id="productPrice" placeholder="Price" step="0.01" />
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="updateName" placeholder="Product Name to Update" />
+      <input type="number" id="updateQty" placeholder="New Quantity" />
+      <button onclick="updateStock()">Update Stock</button>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="removeName" placeholder="Product Name to Remove" />
+      <button onclick="removeProduct()">Remove Product</button>
+    </div>
+
+    <div class="inventory">
+      <h2>Inventory List</h2>
+      <ul id="productList"></ul>
+      <h3 id="inventoryValue">Total Value: $0.00</h3>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
